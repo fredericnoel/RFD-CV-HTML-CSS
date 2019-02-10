@@ -1,0 +1,17 @@
+@import url("reset.css");
+
+@media print {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 640px) {
+
+}
+
+@media screen and (min-width: 641px) {
+
+}
