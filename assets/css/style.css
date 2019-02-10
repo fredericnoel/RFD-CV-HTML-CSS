@@ -1,17 +1,186 @@
 @import url("reset.css");
+@import url("main.css");
 
 @media print {
 
 }
 
 @media screen and (max-width: 320px) {
+    main {
+        background-color: black;
+        color: #FFF;
+        width: 100%;
+    }
 
+    main section#left {
+        margin: 0 0 25px;
+    }
+
+    main section#left img {
+        display: none;
+    }
+
+    main section#left figure figcaption {
+        font-weight: bold;
+    }
+
+    main section#right h1 {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin: 0 0 10px;
+    }
+
+    main section#right h2 {
+        font-size: 1.1em;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0 0 5px;
+    }
+
+    main section#right dt {
+        font-weight: bold;
+        margin: 0 0 5px;
+    }
+
+    main section#right dd {
+        margin: 0 0 10px;
+    }
+
+    main section#right dd:last-child {
+        margin: 0;
+    }
+
+    main section#right dd ul li {
+        list-style-position: inside;
+        list-style-type: square;
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 640px) {
+    main {
+        background-color: #00FF99;
+        width: 100%;
+    }
 
+    main section#left figure figcaption {
+        font-weight: bold;
+    }
+
+    main section#left img {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 0 10px 25px 0;
+    }
+
+    main section#right {
+        clear: left;
+    }
+
+    main section#right h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    main section#right h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0 0 20px;
+    }
+
+    main section#right dl {
+        padding: 0 0 10px;
+    }
+
+    main section#right dt {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 25px 0 10px;
+    }
+
+    main section#right dt:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0 0 10px;
+    }
 }
 
 @media screen and (min-width: 641px) {
+    main {
+        padding: 0 25px;
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 100%;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
 
+    main section {
+        margin: 25px 0;
+        padding: 20px;
+    }
+
+    main section#left {
+        flex: 1;
+        font-size: 1.35em;
+    }
+
+    main section#left address div {
+        padding: 10px 0;
+    }
+
+    main section#left p {
+        margin: 40px 0 0;
+    }
+
+    main section#left figure {
+        margin: auto;
+    }
+
+    main section#left figure img {
+        display: block;
+        margin: auto;
+    }
+
+    main section#left figcaption {
+        margin: 25px 0;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    main section#right {
+        flex: 2;
+    }
+
+    main section#right h1 {
+        text-align: center;
+        font-size: 3.5em;
+        margin: 0 0 40px;
+    }
+
+    main section#right h2 {
+        text-align: center;
+        font-style: italic;
+        font-size: 2.5em;
+        margin: 0 0 60px;
+    }
+
+    main section#right dt {
+        font-size: 2em;
+        border-bottom: 1px dotted black;
+        margin: 50px 0 20px;
+    }
+
+    main section#right dt:first-letter {
+        font-size: 1.5em;
+    }
+
+    main section#right dd ul li {
+        font-size: 1.2em;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
 }
